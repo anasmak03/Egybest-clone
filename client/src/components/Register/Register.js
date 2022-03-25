@@ -1,4 +1,6 @@
 import regex from '../images/egexa.png'
+import './Register.css'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 function Register (){
         return (
             <div>
@@ -7,13 +9,44 @@ function Register (){
                         <img src={regex} alt="logo"/>
                     </div>
                     <div className='lien'>
-                        <a href='#'>← Back to EgyBest</a>
+                        <Link to='/'><a href='#'>← Back to EgyBest</a></Link>
                     </div>
                 </nav>
 
+                <div className='parent'>
+                    <div className='child child11'>
+                        <button>sign in with facebook</button><br />
+                        <button id="btn2">sign in with google</button><br />
+                        <p>Use your social accounts to sign in quickly.</p>
+                    </div>
+                    <div className='child child2'>
+                    <form>
+                        <h3> Create a new Account</h3>
+                        <input type="text" placeholder='Name'/> <br />
+                        <input type="text" placeholder='Email'/><br />
+                        <input type="password" placeholder='Enter your Password'/><br />
+                        <input type='checkbox'/> <span>Male</span>
+                        <input type='checkbox'/> <span>Femme</span><br />
+                        <button>sign up</button>
+                        <p>Already have an account? <span>Sign In?</span></p> 
+                    </form>
+                    </div>
+                </div>
+                <hr className='line'/>
+                <div className='parent11'>
+                    <div className='child111'>
+                        <span>© 2020 eGexa</span>
+                    </div>
+
+                    <div className='child222'>
+                        <select>
+                            <option>English</option>
+                            <option>arabic</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         );
-    
 }
 
 export default Register;
