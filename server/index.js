@@ -6,7 +6,6 @@ const app = express()
 
 
 
-app.use('/', require('./routes/user'))
 
 // app.use(bodyParser.json()) // for parsing application/json
 // app.use(bodyParser.urlencoded({ extended: true }))
@@ -15,6 +14,7 @@ app.use(express.json())
 
 
 
+app.use('/', require('./routes/user'))
 
 /// port env
 
