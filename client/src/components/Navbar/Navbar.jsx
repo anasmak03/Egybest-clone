@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.PNG'
 import './Navbar.css'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+
 function Navbar (){
     const[click,setClick] = useState(false);
     const handleClick = () => setClick(!click)
@@ -22,8 +24,8 @@ function Navbar (){
                     </div>
                     <div className='btn'>
                     <div dir='rtl' lang='ar'>
-                    <button>تسجيل-الدخول </button>
-                        <button>اشترك مجانا</button>
+                    <Link to='/Register'><button>تسجيل-الدخول </button></Link>
+                    <Link to='/Login'><button>اشترك مجانا</button></Link>
                     </div>
 
                     </div>

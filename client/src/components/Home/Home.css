@@ -102,13 +102,13 @@ li{
     color: #FF1000;
     border-bottom: 1px solid #FF1000;
 }
-.parent{
+.parentt{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 
 
-.child p{
+.childd p{
     color: #0066CC;
 }
 

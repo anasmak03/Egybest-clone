@@ -25,18 +25,24 @@ nav{
     margin-top: 60px;
 }
 
+form #lock{
+    font-size:40px;
+    position: relative;
+    top: 8px;
+}
 
- .child11 button{
+.child11 button{
     width: 300px;
     height: 42px;
     margin: 4px;
-   
+   font-size:19px;
+   cursor: pointer;
 }
-#form{
+form{
     width: 400px;
     background-color: #F2F2F2;
-    height: 350px;
-} 
+    height: 320px;
+}
 
 form input[type='text']{
     width: 300px;
@@ -94,11 +100,6 @@ form input[type='checkbox']{
     margin-left: 20px;
 }
 
-form #lock{
-    font-size:40px;
-    position: relative;
-    top: 8px;
-}
 
 
 .parent121{
@@ -121,9 +122,8 @@ form #lock{
 
 }
 
-
 @media screen and (max-width:410px){
-    #form{
+    form{
         width: auto;
         height: auto;
     }

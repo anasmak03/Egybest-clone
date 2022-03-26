@@ -1,11 +1,12 @@
 import regex from '../images/egexa.png'
+import './Login.css'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import LockIcon from '@material-ui/icons/Lock';
-import './Register.css'
-function Register (){
+function Login () {
+    
         return (
             <div>
-                <nav>
+                       <nav>
                     <div className="image">
                         <img src={regex} alt="logo"/>
                     </div>
@@ -21,13 +22,11 @@ function Register (){
                         <p>Use your social accounts to sign in quickly.</p>
                     </div>
                     <div className='child child2'>
-                    <form id="form">
+                    <form>
                         <h3><LockIcon id="lock"/> Create a new Account</h3>
-                        <input type="text" placeholder='Name'/> <br />
                         <input type="text" placeholder='Email'/><br />
                         <input type="password" placeholder='Enter your Password'/><br />
-                        <input type='checkbox'/> <span>Male</span>
-                        <input type='checkbox'/> <span>Femme</span><br />
+                        <span>forgot your password</span>
                         <button>sign up</button>
                         <p>Already have an account? <span>Sign In?</span></p> 
                     </form>
@@ -48,6 +47,7 @@ function Register (){
                 </div>
             </div>
         );
+    
 }
 
-export default Register;
+export default Login;

@@ -101,69 +101,69 @@ function Home() {
                     <li>هذا الشهر</li>
                         </ul>
                         </div>
-                        <div className='parent'>
-                        <div className='child'>
+                        <div className='parentt'>
+                        <div className='childd'>
                             <img src={spider} alt='spiderman'/>
                             <p>spider-man no way home (2021)</p>
                         </div>
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={shot} alt='spiderman'/>
                             <p>shot coller (2022)</p>
 
                         </div>
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={hulu} alt='spiderman'/>
                             <p>deep water</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={bear} alt='spiderman'/>
                             <p>turning red (2022)</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={fire} alt='spiderman'/>
                             <p>uncharted</p>
 
                         </div>
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={batman} alt='spiderman'/>
                             <p>batman</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={girls} alt='spiderman'/>
                             <p>very good girls</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
                         </div>
 
-                        <div className='child'>
-                            <img src={dog} alt='spiderman'/>
-                            <p>doog</p>
-
-                        </div>
-
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
                         </div>
 
-                        <div className='child'>
+                        <div className='childd'>
+                            <img src={dog} alt='spiderman'/>
+                            <p>doog</p>
+
+                        </div>
+
+                        <div className='childd'>
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
