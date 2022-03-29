@@ -23,9 +23,15 @@ import HomeIcon from '@material-ui/icons/Home';
 import MovieIcon from '@material-ui/icons/Movie';
 import TvIcon from '@material-ui/icons/Tv';
 import FolderIcon from '@material-ui/icons/Folder';
+import one from '../images/one.jpg'
+import two from '../images/two.jpg'
+import three from '../images/three.jpg'
+import four from '../images/four.jpg'
+import five from '../images/five.jpg'
+import sexe from '../images/sexe.jpg'
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 
-function Today(){
+function Month(){
     
         return (
             <div>
@@ -108,7 +114,8 @@ function Today(){
                     <div className='series'>
                     <div dir='rtl' lang='ar'>
                         <ul>
-               
+                 
+              
                         <Link to='/'><li> <TrendingUpIcon />الأفلام الاكثر مشاهدة</li></Link>
                     <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
                     <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
@@ -118,31 +125,31 @@ function Today(){
                         </div>
                         <div className='parentt'>
                         <div className='childd'>
-                            <img src={smith} alt='spiderman'/>
+                            <img src={one} alt='spiderman'/>
                             <p>King Richard (2021)</p>
                         </div>
                         <div className='childd'>
-                            <img src={death} alt='spiderman'/>
+                            <img src={two} alt='spiderman'/>
                             <p>Death of the nile</p>
 
                         </div>
                         <div className='childd'>
-                            <img src={not} alt='spiderman'/>
+                            <img src={three} alt='spiderman'/>
                             <p>Not Me</p>
                         </div>
                         <div className='childd'>
-                            <img src={love} alt='spiderman'/>
+                            <img src={four} alt='spiderman'/>
                             <p>love & other drugs (2022)</p>
 
                         </div>
                         <div className='childd'>
-                            <img src={coda} alt='spiderman'/>
+                            <img src={five} alt='spiderman'/>
                             <p>coda (2021)</p>
 
                         </div>
 
                         <div className='childd'>
-                            <img src={json} alt='spiderman'/>
+                            <img src={sexe} alt='spiderman'/>
                             <p>wrath of man (2022)</p>
 
                         </div>
@@ -215,4 +222,4 @@ function Today(){
     
 }
 
-export default Today;
+export default Month;

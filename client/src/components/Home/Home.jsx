@@ -10,9 +10,34 @@ import dog from '../images/dog.jpg'
 import shot from '../images/shot.jpg'
 import Now from './Now'
 import smith from '../images/willsmith.jpg'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import MovieIcon from '@material-ui/icons/Movie';
+import TvIcon from '@material-ui/icons/Tv';
+import FolderIcon from '@material-ui/icons/Folder';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+import {BrowserRouter as Router, Routes, Route, Link,useNavigate} from 'react-router-dom';
+import React, { useState,useEffect} from 'react';
+import axios from "axios"
+
 function Home() {
-    
+            let navigate = useNavigate()
+            const [user,setUser] = useState()
+          
+            const getUser = async () => {
+                const res = await axios.get("/",{
+                    headers : {Authorization : `Bearer ${localStorage.getItem("token")}`
+                }
+                })
+
+                setUser(res.data)
+                
+            }
+            useEffect(() => {
+                getUser()
+                if(!localStorage.getItem("token")){
+                       navigate('/login') 
+                } },[])
+
         return (
             <div>
                 <Navbar />
@@ -95,11 +120,11 @@ function Home() {
                     <div dir='rtl' lang='ar'>
                         <ul>
                  
-                        <Link to='/'><li className="now">الأفلام الاكثر مشاهدة</li></Link>
-                    <Link to='/Now'><li className="now">   الان</li></Link>
-                    <Link to='/Today'><li className="today">اليوم</li></Link>
-                    <li>هذا الاسبوع</li>
-                    <li>هذا الشهر</li>
+                        <Link to='/'><li> <TrendingUpIcon />الأفلام الاكثر مشاهدة</li></Link>
+                    <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
+                    <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
+                    <Link to='/WEEK'><li className='today'>  <TrendingUpIcon />هذا الاسبوع</li></Link>
+                  <Link to='/Month'>  <li className='today'>  <TrendingUpIcon />هذا الشهر</li></Link> 
                         </ul>
                         </div>
                         <div className='parentt'>
@@ -178,13 +203,13 @@ function Home() {
                     <div className="third">
                     <div dir='rtl' lang='ar'>
                        <div className='infos'>
-                           <button>ايجي بيست</button>
+                           <button> <HomeIcon id="iconhome"/>&nbsp;ايجي بيست</button>
                            <button>الاكثر مشاهدة</button>
-                           <button>افلام</button>
-                           <button>مسلسلات</button>
-                           <button> 💪 المصارعة الحرة    </button>
+                           <button> <MovieIcon id="iconhome"/>&nbsp;افلام</button>
+                           <button> <TvIcon id="iconhome" />&nbsp;مسلسلات</button>
+                           <button> 💪 المصارعة الحرة </button>
                            <button> 😆 مسرحيات</button>
-                           <button>مكتبتي</button>
+                           <button> <FolderIcon id="folder"/> &nbsp;مكتبتي</button>
                          </div>
                        </div>
                     </div>

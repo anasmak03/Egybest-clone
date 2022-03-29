@@ -1,8 +1,43 @@
 import regex from '../images/egexa.png'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, Link,useNavigate} from 'react-router-dom'
 import LockIcon from '@material-ui/icons/Lock';
 import './Register.css'
+import React, { useState,useEffect} from 'react';
+import axios from 'axios'
+
 function Register (){
+    let navigate = useNavigate()
+  
+  const [data,setData] = useState({
+    name : "",
+    email : "",
+    password : "" ,
+    Type_Cheked :  "",
+  })
+
+  const {name,email,password,Type_Cheked} = data
+  const handleChange = (e) => {
+        setData({...data,[e.target.name]:e.target.value})
+}
+
+  const handleSubmit  = async(e) => {
+      if(data.name == '' || data.email == '' || data.password == ''){
+        alert('please enter informations')
+      }
+
+    e.preventDefault();
+    try{
+      await axios.post("/register",{
+        name,email,password,Type_Cheked},
+        {headers : {'Content-Type': 'application/json',
+        'Authorization': 'JWT fefege...'}}        
+      )
+        navigate('/login')
+    }
+    catch(err){
+      console.log(err)
+    }
+  }
         return (
             <div>
                 <nav>
@@ -21,13 +56,13 @@ function Register (){
                         <p>Use your social accounts to sign in quickly.</p>
                     </div>
                     <div className='child child2'>
-                    <form id="form">
+                    <form id="form" onSubmit={handleSubmit}>
                         <h3><LockIcon id="lock"/> Create a new Account</h3>
-                        <input type="text" placeholder='Name'/> <br />
-                        <input type="text" placeholder='Email'/><br />
-                        <input type="password" placeholder='Enter your Password'/><br />
-                        <input type='checkbox'/> <span>Male</span>
-                        <input type='checkbox'/> <span>Femme</span><br />
+                        <input onChange={handleChange} value={name} type="text" name='name' placeholder='Name'/> <br />
+                        <input onChange={handleChange} value={email} type="text" name='email' placeholder='Email'/><br />
+                        <input onChange={handleChange} value={password} type="password" name='password' placeholder='Enter your Password'/><br />
+                        <input onChange={handleChange}  value="Male" type='radio' name="Type_Cheked"/> <span>Male</span>
+                        <input onChange={handleChange} value="Female" type='radio' name="Type_Cheked"/> <span>Femme</span><br />
                         <button>sign up</button>
                         <p>Already have an account? <span>Sign In?</span></p> 
                     </form>

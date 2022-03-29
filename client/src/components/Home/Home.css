@@ -72,6 +72,20 @@
     justify-content: center;
 }
 
+.series li{
+    font-weight: bolder;
+    color: #0066CC;
+}
+#iconhome{
+    position: relative;
+    top: 4px; 
+    text-indent: 5px;
+}
+
+#folder{
+    position: relative;
+    top: 4px;
+}
 li{
     list-style: none;
     padding: 12px;
@@ -80,7 +94,8 @@ li{
 }
 .now:hover{
     line-height: 20px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #FF1000;
+    color: #FF1000;
 }
 
 .today:hover{
@@ -108,6 +123,7 @@ a{    text-decoration: none;
     cursor: pointer;
     color: #0066CC;
     font-size: 18px;
+   
 }
 
 .infos button:nth-child(2){

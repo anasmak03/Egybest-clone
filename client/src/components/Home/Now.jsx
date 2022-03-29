@@ -19,6 +19,12 @@ import dune from '../images/dune.jpg'
 import death from '../images/death.jpg'
 import disney from '../images/disney.jpg'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import HomeIcon from '@material-ui/icons/Home';
+import MovieIcon from '@material-ui/icons/Movie';
+import TvIcon from '@material-ui/icons/Tv';
+import FolderIcon from '@material-ui/icons/Folder';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+
 function Today(){
     
         return (
@@ -102,12 +108,13 @@ function Today(){
                     <div className='series'>
                     <div dir='rtl' lang='ar'>
                         <ul>
-                 
-                         <li>الأفلام الاكثر مشاهدة</li>
-                    <Link to='/Now'><li className="now">   الان</li></Link>
-                    <Link to='/Today'><li className="today">اليوم</li></Link>
-                    <li>هذا الاسبوع</li>
-                    <li>هذا الشهر</li>
+              
+                  
+                        <Link to='/'><li> <TrendingUpIcon />الأفلام الاكثر مشاهدة</li></Link>
+                    <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
+                    <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
+                    <Link to='/WEEK'><li className='today'>  <TrendingUpIcon />هذا الاسبوع</li></Link>
+                  <Link to='/Month'>  <li className='today'>  <TrendingUpIcon />هذا الشهر</li></Link> 
                         </ul>
                         </div>
                         <div className='parentt'>
@@ -190,14 +197,14 @@ function Today(){
 
                     <div className="third">
                     <div dir='rtl' lang='ar'>
-                       <div className='infos'>
-                           <button>ايجي بيست</button>
+                    <div className='infos'>
+                           <button> <HomeIcon id="iconhome"/>&nbsp;ايجي بيست</button>
                            <button>الاكثر مشاهدة</button>
-                           <button>افلام</button>
-                           <button>مسلسلات</button>
-                           <button> 💪 المصارعة الحرة    </button>
+                           <button> <MovieIcon id="iconhome"/>&nbsp;افلام</button>
+                           <button> <TvIcon id="iconhome" />&nbsp;مسلسلات</button>
+                           <button> 💪 المصارعة الحرة </button>
                            <button> 😆 مسرحيات</button>
-                           <button>مكتبتي</button>
+                           <button> <FolderIcon id="folder"/> &nbsp;مكتبتي</button>
                          </div>
                        </div>
                     </div>

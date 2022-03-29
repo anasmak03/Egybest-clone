@@ -59,6 +59,7 @@ form button{
     border: none;
     border-radius: 4px;
     margin-top: 7px;
+    cursor: pointer;
 }
 
 form input{

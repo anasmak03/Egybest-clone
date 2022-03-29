@@ -10,6 +10,29 @@
    
 }
 
+.logout{
+    margin: 20px;
+    font-size: 11pt;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+#user{
+    position: relative;
+    top: 5px;
+}
+#blue{
+    background-color: #0066CC;
+    color: white;
+}
+#top{
+    position: relative;
+    top: 5px;
+}
+
 .search input{
     width: 462.5px;
     height: 35px;
@@ -22,6 +45,7 @@
     box-sizing: border-box;
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
     font-weight: lighter;
+    font-size: 17px;
 }
 
 .search input:focus{

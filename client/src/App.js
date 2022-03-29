@@ -5,6 +5,8 @@ import Register from './components/Register/Register';
 import Login from './components/login/Login';
 import Now from './components/Home/Now'
 import Today from './components/Home/Today'
+import Month from './components/Home/Month';
+import WEEK from './components/Home/WEEK'
 function App() {
   return (
     <div className="App">
@@ -16,7 +18,9 @@ function App() {
                     <Route path='/Login' element={<Login />}></Route>
                     <Route path='/Now' element={<Now />}></Route>
                     <Route path='/Today' element={<Today />}></Route>
-                </Routes>    
+                    <Route path='/WEEK' element={<WEEK />}></Route>
+                    <Route path='/Month' element={<Month />}></Route>
+          </Routes>    
   </Router>
     </div>
   );

@@ -108,7 +108,8 @@ function Today(){
                     <div className='series'>
                     <div dir='rtl' lang='ar'>
                         <ul>
-               
+                 
+          
                         <Link to='/'><li> <TrendingUpIcon />الأفلام الاكثر مشاهدة</li></Link>
                     <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
                     <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
