@@ -76,8 +76,20 @@ li{
     list-style: none;
     padding: 12px;
     cursor: pointer;
+   
+}
+.now:hover{
+    line-height: 20px;
+    border-bottom: 2px solid red;
 }
 
+.today:hover{
+    line-height: 20px;
+    border-bottom: 2px solid red;
+}
+a{    text-decoration: none;
+    color: #222222;
+}
 .infos{
     width: 150px;
     background-color: #FFFFFF;

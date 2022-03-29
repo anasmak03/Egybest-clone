@@ -9,6 +9,7 @@ import girls from "../images/girls.jpg"
 import dog from '../images/dog.jpg'
 import shot from '../images/shot.jpg'
 import Now from './Now'
+import smith from '../images/willsmith.jpg'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 function Home() {
     
@@ -94,9 +95,9 @@ function Home() {
                     <div dir='rtl' lang='ar'>
                         <ul>
                  
-                         <li>الأفلام الاكثر مشاهدة</li>
-                    <li>   الان</li>
-                   <li>اليوم</li>
+                        <Link to='/'><li className="now">الأفلام الاكثر مشاهدة</li></Link>
+                    <Link to='/Now'><li className="now">   الان</li></Link>
+                    <Link to='/Today'><li className="today">اليوم</li></Link>
                     <li>هذا الاسبوع</li>
                     <li>هذا الشهر</li>
                         </ul>
