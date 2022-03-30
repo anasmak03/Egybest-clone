@@ -10,23 +10,23 @@ import React, { useState,useEffect} from 'react';
 import axios from "axios"
 import dato from '../Data/Section.json'
 function Home() {
-            let navigate = useNavigate()
-            const [user,setUser] = useState()
+            // let navigate = useNavigate()
+            // const [user,setUser] = useState()
           
-            const getUser = async () => {
-                const res = await axios.get("/",{
-                    headers : {Authorization : `Bearer ${localStorage.getItem("token")}`
-                }
-                })
+            // const getUser = async () => {
+            //     const res = await axios.get("/",{
+            //         headers : {Authorization : `Bearer ${localStorage.getItem("token")}`
+            //     }
+            //     })
 
-                setUser(res.data)
+            //     setUser(res.data)
                 
-            }
-            useEffect(() => {
-                getUser()
-                if(!localStorage.getItem("token")){
-                       navigate('/login') 
-                } },[])
+            // }
+            // useEffect(() => {
+            //     getUser()
+            //     if(!localStorage.getItem("token")){
+            //            navigate('/login') 
+            //     } },[])
 
               
         return (
