@@ -1,48 +1,48 @@
 [
     {
         "id" : 1,
-        "image" : "http://localhost:3000/static/media/dune.9f8364cdcea9d9ff67c8.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "Dune"
     },
 
     {
         "id" : 2,
-        "image" : "http://localhost:3000/static/media/love.5a071e824fa1467e5dd4.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "Love and other drugs"
     },
 
     {
         "id" : 3,
-        "image" : "http://localhost:3000/static/media/willsmith.0d276338726abc6a9264.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "will sith"
     },
 
     {
         "id" : 4,
-        "image" : "http://localhost:3000/static/media/death.948188c7e12bbcc1a3a7.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "Death of the nile"
     },
 
     {
         "id" : 5,
-        "image" : "http://localhost:3000/static/media/code.850ef6f8046fe47edf83.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "Coda"
     },
 
     {
         "id" : 6,
-        "image" : "http://localhost:3000/static/media/batman.65932f1d34ca08232249.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "batman"
     },
 
     {
         "id" : 7,
-        "image" : "http://localhost:3000/static/media/json.fda66891f89cdc0c4d8d.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "wrath of man"
     },
     {
         "id" : 8,
-        "image" : "http://localhost:3000/static/media/disney.f3cf4724e7c222dec739.jpg",
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
         "title" : "Ensatnto"
     },
     {
