@@ -1,0 +1,71 @@
+[
+
+    {
+        "id" : 1,
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY212bVl2bUVtYm1tbWJFY3htYm1FYW1FYXhh.jpg",
+        "title" :"movie lovers unit"
+    },
+    {
+        "id" : 2,
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY21tdmNtRW1FbUV2dFJjbWp2Y2x2Y3ZjbXpQbXY.jpg",
+        "title" : "The in Between"
+    },
+
+    {
+        "id" :3,
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY21FbXBtbWptRUVjbW5wanZ3bHZ3YWN3.jpg",
+        "title" : "The Age of Adaline"
+    },
+    {
+        "id" : 4,
+        "image" : "http://localhost:3000/static/media/willsmith.0d276338726abc6a9264.jpg",
+        "title" : "kinna richard (2021)"
+    },
+
+    {
+        "id" : 5,
+        "image" : "http://localhost:3000/static/media/death.948188c7e12bbcc1a3a7.jpg",
+        "title" : "death of the nile"
+    },
+
+    {
+        "id" : 6,
+        "image" : "http://localhost:3000/static/media/not-me.2d96d1b8260d04a5864f.jpg",
+        "title" : "مش انا"
+    },
+
+    {
+        "id" : 7,
+        "image" : "http://localhost:3000/static/media/love.5a071e824fa1467e5dd4.jpg",
+        "title" : "love and other drugs"
+    },
+
+    {
+        "id" : 8,
+        "image" : "http://localhost:3000/static/media/code.850ef6f8046fe47edf83.jpg",
+        "title" : "Coda"
+    },
+
+    {
+        "id" : 9,
+        "image" : "http://localhost:3000/static/media/json.fda66891f89cdc0c4d8d.jpg",
+        "title" : "wrath of man"
+    },
+
+    {
+        "id" : 10,
+        "image" : "http://localhost:3000/static/media/girls.5829ed419ce326435508.jpg",
+        "title" : "very good girls"
+    },
+    {
+        "id" : 11,
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY21URW1tdk5idnRSY212YXdkVGpQbWptdg.jpg",
+        "title" : "Robin Hood"
+    },
+   
+    {
+        "id" : 12,
+        "image" : "https://i.egycdn.com/pic/RHNhSUNlY21IY3ZOam1ibXZtYWN3VG1tYmNrTnp4dnc.jpg",
+        "title" : "الانس و النمس (202)"
+    }
+]

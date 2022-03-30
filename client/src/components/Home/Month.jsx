@@ -2,35 +2,13 @@ import React, { Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Home from './Home';
 import "./Home.css"
-import spider from '../images/spider.jpg'
-import hulu from '../images/hulu.jpg'
-import bear from '../images/bear.jpg'
-import fire from '../images/fire.jpg'
-import batman from '../images/batman.jpg'
-import girls from "../images/girls.jpg"
-import dog from '../images/dog.jpg'
-import shot from '../images/shot.jpg'
-import Now from './Now'
-import smith from '../images/willsmith.jpg'
-import love from '../images/love.jpg'
-import coda from '../images/code.jpg'
-import json from '../images/json.jpg'
-import dune from '../images/dune.jpg'
-import death from '../images/death.jpg'
-import not from '../images/not-me.jpg'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import MovieIcon from '@material-ui/icons/Movie';
 import TvIcon from '@material-ui/icons/Tv';
 import FolderIcon from '@material-ui/icons/Folder';
-import one from '../images/one.jpg'
-import two from '../images/two.jpg'
-import three from '../images/three.jpg'
-import four from '../images/four.jpg'
-import five from '../images/five.jpg'
-import sexe from '../images/sexe.jpg'
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
-
+import dato from '../Data/Month.json'
 function Month(){
     
         return (
@@ -124,7 +102,16 @@ function Month(){
                         </ul>
                         </div>
                         <div className='parentt'>
-                        <div className='childd'>
+
+                        {dato.map((datas) => ( 
+                        <>
+                              <div className='childd'>
+                            <img key={datas.id}  src={datas.image} />
+                            <p key={datas.id}>{datas.title}</p>
+                        </div>                       
+                         </>
+                    ))}
+                        {/* <div className='childd'>
                             <img src={one} alt='spiderman'/>
                             <p>King Richard (2021)</p>
                         </div>
@@ -191,7 +178,7 @@ function Month(){
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
-                        </div>
+                        </div> */}
                     </div>
                     </div>
                     

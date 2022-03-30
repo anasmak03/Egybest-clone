@@ -1,32 +1,32 @@
 [
     {
         "id" : 1,
-        "image" : "http://localhost:3000/static/media/spider.8aa903a5c7ded1ccbdfa.jpg",
-        "title" : "spider-man no way home (2021)"
+        "image" : "http://localhost:3000/static/media/dune.9f8364cdcea9d9ff67c8.jpg",
+        "title" : "Dune"
     },
 
     {
         "id" : 2,
-        "image" : "http://localhost:3000/static/media/shot.1c01315a4ef76726460e.jpg",
-        "title" : "shot coller (2022)"
+        "image" : "http://localhost:3000/static/media/love.5a071e824fa1467e5dd4.jpg",
+        "title" : "Love and other drugs"
     },
 
     {
         "id" : 3,
-        "image" : "http://localhost:3000/static/media/hulu.459e0234bbb787e8de45.jpg",
-        "title" : "deep water"
+        "image" : "http://localhost:3000/static/media/willsmith.0d276338726abc6a9264.jpg",
+        "title" : "will sith"
     },
 
     {
         "id" : 4,
-        "image" : "http://localhost:3000/static/media/bear.c61e3c59e291654d1093.jpg",
-        "title" : "turning red (2022)"
+        "image" : "http://localhost:3000/static/media/death.948188c7e12bbcc1a3a7.jpg",
+        "title" : "Death of the nile"
     },
 
     {
         "id" : 5,
-        "image" : "http://localhost:3000/static/media/fire.7b767d1fc0b65075948c.jpg",
-        "title" : "uncharted"
+        "image" : "http://localhost:3000/static/media/code.850ef6f8046fe47edf83.jpg",
+        "title" : "Coda"
     },
 
     {
@@ -37,13 +37,13 @@
 
     {
         "id" : 7,
-        "image" : "http://localhost:3000/static/media/girls.5829ed419ce326435508.jpg",
-        "title" : "very good girls"
+        "image" : "http://localhost:3000/static/media/json.fda66891f89cdc0c4d8d.jpg",
+        "title" : "wrath of man"
     },
     {
         "id" : 8,
-        "image" : "https://i.egycdn.com/pic/RHNhSUNlY21URW1tdk5idnRSY212YXdkVGpQbWptdg.jpg",
-        "title" : "Robin Hood"
+        "image" : "http://localhost:3000/static/media/disney.f3cf4724e7c222dec739.jpg",
+        "title" : "Ensatnto"
     },
     {
         "id" : 9,

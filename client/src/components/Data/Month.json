@@ -1,38 +1,38 @@
 [
     {
         "id" : 1,
-        "image" : "http://localhost:3000/static/media/spider.8aa903a5c7ded1ccbdfa.jpg",
-        "title" : "spider-man no way home (2021)"
+        "image" : "http://localhost:3000/static/media/one.71195fa21be68719c235.jpg",
+        "title" : "العارف"
     },
 
     {
         "id" : 2,
-        "image" : "http://localhost:3000/static/media/shot.1c01315a4ef76726460e.jpg",
-        "title" : "shot coller (2022)"
+        "image" : "http://localhost:3000/static/media/two.ec2e73c8a0fe19f427b6.jpg",
+        "title" : "sans Répit"
     },
 
     {
         "id" : 3,
-        "image" : "http://localhost:3000/static/media/hulu.459e0234bbb787e8de45.jpg",
-        "title" : "deep water"
+        "image" : "http://localhost:3000/static/media/three.d9e8affa861d9cf20d47.jpg",
+        "title" : "Non exit"
     },
 
     {
         "id" : 4,
-        "image" : "http://localhost:3000/static/media/bear.c61e3c59e291654d1093.jpg",
-        "title" : "turning red (2022)"
+        "image" : "http://localhost:3000/static/media/four.e36eee9bc61361dbb655.jpg",
+        "title" : "ريسا"
     },
 
     {
         "id" : 5,
-        "image" : "http://localhost:3000/static/media/fire.7b767d1fc0b65075948c.jpg",
-        "title" : "uncharted"
+        "image" : "http://localhost:3000/static/media/five.d8c12ecc4c7b375b2c85.jpg",
+        "title" : "Black light"
     },
 
     {
         "id" : 6,
-        "image" : "http://localhost:3000/static/media/batman.65932f1d34ca08232249.jpg",
-        "title" : "batman"
+        "image" : "http://localhost:3000/static/media/sexe.ca9df8bcec808e1c5324.jpg",
+        "title" : "البعض لا للمضأون مرتين"
     },
 
     {

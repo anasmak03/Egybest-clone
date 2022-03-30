@@ -2,28 +2,13 @@ import React, { Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Home from './Home';
 import "./Home.css"
-import spider from '../images/spider.jpg'
-import hulu from '../images/hulu.jpg'
-import bear from '../images/bear.jpg'
-import fire from '../images/fire.jpg'
-import batman from '../images/batman.jpg'
-import girls from "../images/girls.jpg"
-import dog from '../images/dog.jpg'
-import shot from '../images/shot.jpg'
-import Now from './Now'
-import smith from '../images/willsmith.jpg'
-import love from '../images/love.jpg'
-import coda from '../images/code.jpg'
-import json from '../images/json.jpg'
-import dune from '../images/dune.jpg'
-import death from '../images/death.jpg'
-import not from '../images/not-me.jpg'
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import MovieIcon from '@material-ui/icons/Movie';
 import TvIcon from '@material-ui/icons/Tv';
 import FolderIcon from '@material-ui/icons/Folder';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+import dato from '../Data/Week.json'
 
 function Today(){
     
@@ -108,8 +93,8 @@ function Today(){
                     <div className='series'>
                     <div dir='rtl' lang='ar'>
                         <ul>
-                 
-          
+              
+                  
                         <Link to='/'><li> <TrendingUpIcon />الأفلام الاكثر مشاهدة</li></Link>
                     <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
                     <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
@@ -118,6 +103,26 @@ function Today(){
                         </ul>
                         </div>
                         <div className='parentt'>
+
+
+                        {dato.map((datas) => ( 
+                        <>
+                              <div className='childd'>
+                            <img key={datas.id}  src={datas.image} />
+                            <p key={datas.id}>{datas.title}</p>
+                        </div>                       
+                         </>
+                    ))}
+                        {/* <div className='childd'>
+                            <img src={dune} alt='spiderman'/>
+                            <p>Dune</p>
+
+                        </div>
+                        <div className='childd'>
+                            <img src={love} alt='spiderman'/>
+                            <p>love & other drugs (2022)</p>
+
+                        </div>
                         <div className='childd'>
                             <img src={smith} alt='spiderman'/>
                             <p>King Richard (2021)</p>
@@ -127,15 +132,7 @@ function Today(){
                             <p>Death of the nile</p>
 
                         </div>
-                        <div className='childd'>
-                            <img src={not} alt='spiderman'/>
-                            <p>Not Me</p>
-                        </div>
-                        <div className='childd'>
-                            <img src={love} alt='spiderman'/>
-                            <p>love & other drugs (2022)</p>
-
-                        </div>
+                       
                         <div className='childd'>
                             <img src={coda} alt='spiderman'/>
                             <p>coda (2021)</p>
@@ -148,12 +145,13 @@ function Today(){
 
                         </div>
 
+                       
+                      
+                     
                         <div className='childd'>
-                            <img src={dune} alt='spiderman'/>
-                            <p>Dune</p>
-
+                            <img src={disney} alt='spiderman'/>
+                            <p>Disney Encanio</p>
                         </div>
-                    
 
                         <div className='childd'>
                             <img src={girls} alt='spiderman'/>
@@ -185,7 +183,7 @@ function Today(){
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
-                        </div>
+                        </div> */}
                     </div>
                     </div>
                     

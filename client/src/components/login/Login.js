@@ -62,7 +62,7 @@ function Login () {
                         <input onChange={handleChange} value={password} type="password" name='password' placeholder='Enter your Password'/><br />
                         <span>forgot your password</span>
                         <button>sign up</button>
-                        <p>Already have an account? <span>Sign In?</span></p> 
+                        <p>Don't have an account? <Link to='/register'><span>Sign Up?</span> </Link></p> 
                     </form>
                     </div>
                 </div>

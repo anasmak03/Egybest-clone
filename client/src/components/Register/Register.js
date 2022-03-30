@@ -64,7 +64,7 @@ function Register (){
                         <input onChange={handleChange}  value="Male" type='radio' name="Type_Cheked"/> <span>Male</span>
                         <input onChange={handleChange} value="Female" type='radio' name="Type_Cheked"/> <span>Femme</span><br />
                         <button>sign up</button>
-                        <p>Already have an account? <span>Sign In?</span></p> 
+                        <p>Already have an account? <Link to='/login'><span>Sign In?</span></Link></p> 
                     </form>
                     </div>
                 </div>
