@@ -44,6 +44,9 @@ form input[type='text']{
     padding: 6px;
 }
 
+*{
+    font-family: 'Cairo', sans-serif;
+}
 form input[type='password']{
     width: 300px;
     height: 22px;

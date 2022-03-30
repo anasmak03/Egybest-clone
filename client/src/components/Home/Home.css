@@ -1,3 +1,6 @@
+*{
+    font-family: 'Cairo', sans-serif;
+}
 .container{
     background-color: #ECF0F0;
     width: 100%;
