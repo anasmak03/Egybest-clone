@@ -1,37 +1,36 @@
 const express = require('express')
-const mongoose  = require('mongoose')
-require('dotenv').config()
-const cors = require('cors')
 const app = express()
-
-
-
-
-// app.use(bodyParser.json()) // for parsing application/json
-// app.use(bodyParser.urlencoded({ extended: true }))
+const mongoose = require('mongoose')
+const cors = require('cors')
 app.use(cors())
-app.use(express.json())
-
-app.use('/', require('./routes/user'))
-
-/// port env
+require('dotenv').config()
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 
-app.get('/' , (req,res) => {
-    res.send('hhhhh')
+
+const  User  = require('./models/User');
+
+const authRoutes = require('./routes/user')
+app.use(authRoutes)
+
+
+app.get('/', (req,res) => {
+    res.send('welcome to home page')
 })
 
 
-////// connect database
-mongoose.connect(process.env.MONGO_URL,
-    
-    err => {
+
+
+
+mongoose.connect(process.env.MONGO_URL, 
+    err =>  {
         if(err) throw err
         console.log('database connected')
-    })
+        
+     });
 
-
-    //// import port
-app.listen(8080, () => {
-    console.log(`server run in 8080`)
+port = 7000
+app.listen(port, (req,res) => {
+    console.log(`server run in ${port}`)
 })
