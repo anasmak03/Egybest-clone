@@ -18,7 +18,7 @@ import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import {BrowserRouter as Router, Routes, Route, Link,useNavigate} from 'react-router-dom';
 import React, { useState,useEffect} from 'react';
 import axios from "axios"
-
+import dato from '../Data/Section.json'
 function Home() {
             let navigate = useNavigate()
             const [user,setUser] = useState()
@@ -37,6 +37,21 @@ function Home() {
                 if(!localStorage.getItem("token")){
                        navigate('/login') 
                 } },[])
+
+                const mydata = (
+                    <div>
+                    {dato.map((datas) => ( 
+                        <>
+                            <div className='parentt'>
+                              <div className='childd'>
+                            <img key={datas.id}  src={datas.image} />
+                            <p key={datas.id}>{datas.title}</p>
+                        </div>  
+                        </div>                       
+                         </>
+                    ))}
+                    </div>
+                )
 
         return (
             <div>
@@ -124,20 +139,24 @@ function Home() {
                     <Link to='/Now'><li className="now"> <TrendingUpIcon />   الان</li></Link>
                     <Link to='/Today'><li className="today">  <TrendingUpIcon />اليوم</li></Link>
                     <Link to='/WEEK'><li className='today'>  <TrendingUpIcon />هذا الاسبوع</li></Link>
-                  <Link to='/Month'>  <li className='today'>  <TrendingUpIcon />هذا الشهر</li></Link> 
+                  <Link to='/Month'><li className='today'>  <TrendingUpIcon />هذا الشهر</li></Link> 
                         </ul>
                         </div>
+                        
                         <div className='parentt'>
-                        <div className='childd'>
+                        {mydata}
+
+                        {/* <div className='childd'>
                             <img src={spider} alt='spiderman'/>
                             <p>spider-man no way home (2021)</p>
-                        </div>
-                        <div className='childd'>
+                        </div> */}
+
+                        {/* <div className='childd'>
                             <img src={shot} alt='spiderman'/>
                             <p>shot coller (2022)</p>
 
-                        </div>
-                        <div className='childd'>
+                        </div> */}
+                        {/* <div className='childd'>
                             <img src={hulu} alt='spiderman'/>
                             <p>deep water</p>
 
@@ -193,7 +212,7 @@ function Home() {
                             <img src={dog} alt='spiderman'/>
                             <p>doog</p>
 
-                        </div>
+                        </div> */}
                     </div>
                     </div>
                     

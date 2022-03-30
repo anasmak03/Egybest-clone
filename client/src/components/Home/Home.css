@@ -130,6 +130,7 @@ a{    text-decoration: none;
     color: #FF1000;
     border-bottom: 1px solid #FF1000;
 }
+
 .parentt{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));

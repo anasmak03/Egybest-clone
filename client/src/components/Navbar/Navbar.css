@@ -18,7 +18,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    background-color:red;
+    color:white;
+ padding: 7px 15px;
 }
 #user{
     position: relative;
