@@ -24,6 +24,7 @@
     border: 0.2px solid #DDDDDD;
     color: #0066CC;
     background-color: #FFFFFF;
+    width: 298px !important;
 }
 
 .film button{
@@ -135,6 +136,7 @@ a{    text-decoration: none;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
+
 
 
 .childd p{
